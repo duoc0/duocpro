@@ -60,7 +60,7 @@
 
     .blinking-text {
       position: absolute;
-      top: 437.5px; /* ngay trên elapsed time */
+      top: 445px; /* ngay trên elapsed time */
       left: 50%;
       transform: translateX(-50%);
       color: #00CC33;
@@ -100,10 +100,6 @@
 
   const dateTimeFull = `${yyyy}-${mm}-${dd} ${hh}:${mi}:${ss}`;
   document.getElementById('datetime1').textContent = dateTimeFull;
-
-  // Hiển thị mốc giờ 08:00 của ngày hôm nay
-  const dateOnly = `${yyyy}-${mm}-${dd}  08:00`;
-  document.getElementById('datetime2').textContent = dateOnly;
 
   // === TÍNH MỐC THỜI GIAN GẦN NHẤT CHIA HẾT CHO 12 GIỜ TỪ 08:00 ===
   const hour = now.getHours();
